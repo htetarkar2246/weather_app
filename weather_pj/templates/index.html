@@ -1,0 +1,11 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" name="city"/>
+    <button type="submit">S</button>
+</form>
+<h1>City:{{city}}</h1>
+<h1>Contry Code: {{data.country_code}} </h1>
+<h1>Coordinate:  {{data.coordinate}} </h1>
+<h1>Temp:  {{data.temp}}</h1>
+<h1>Pressure:  {{data.pressure}}</h1>
+<h1>Humidity:  {{data.humidiy}} </h1>
